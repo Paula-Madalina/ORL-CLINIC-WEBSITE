@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile__photo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__photo {
+    width: 700px; 
+    height: 900px; 
+}
+.hero__title {
+    margin: 10px 100px;
+}
+
+.hero__content p {
+    text-align: justify;
+    margin-bottom: 1rem; 
+    color: rgba(136,136,135,255);
+    font-size: 18px;
+}
+.hero__content {
+    margin: 10px 100px;
+}

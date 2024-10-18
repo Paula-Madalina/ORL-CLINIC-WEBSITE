@@ -34,12 +34,12 @@ function Header() {
     };
 
   return (
-    <div>
+    <div style={{paddingTop:"130px"}}>
       <div className="header__container">
         <div className='top__header'>
           <div className='doctor__specializations'>
             <div className='doctor__name'>
-              <Link to="/aboutMe"  className='doctor__name__text'><p>Elena Martin</p></Link>
+              <Link to="/aboutMe"  className='doctor__name__text' style={{textDecoration:"none"}}><p className='doctor__name__text__p' >Elena Martin</p></Link>
             </div>
             <div className='first__specialization__container'>
             <Button
@@ -142,7 +142,7 @@ function Header() {
             </div>
 
             
-          </div>
+        </div>
 
           <div className='change__language__and__telephone'>
             <div className="change__language">
@@ -165,21 +165,21 @@ function Header() {
 
             {/* NAVLINKS SECTION */}
             <div className='navbar__buttons'>
-                <p>Acasa</p>
-                <p>Testimoniale</p>
-                <p>#HappyPatients</p>
-                <p>Pentru Medici</p>
-                <p>Echipa</p>
-                <p>Preturi</p>
-                <p>Magazin Online</p>
-                <p>Blog</p>
+                <p className='navlinks__routing'>Acasa</p>
+                <p className='navlinks__routing'>Testimoniale</p>
+                <p className='navlinks__routing'>#HappyPatients</p>
+                <p className='navlinks__routing'>Pentru Medici</p>
+                <p className='navlinks__routing'>Echipa</p>
+                <p className='navlinks__routing'>Preturi</p>
+                <p className='navlinks__routing'>Magazin Online</p>
+                <p className='navlinks__routing'>Blog</p>
             </div>
 
             {/* SOCIAL MEDIA SECTION */}
             <div className='social__media'>
-                <div><InstagramIcon/></div>
-                <div><FacebookIcon/></div>
-                <div><TwitterIcon/></div>
+                <div className='social__media__icons'><InstagramIcon/></div>
+                <div className='social__media__icons'><FacebookIcon/></div>
+                <div className='social__media__icons'><TwitterIcon/></div>
             </div>
         </div>
       </div>

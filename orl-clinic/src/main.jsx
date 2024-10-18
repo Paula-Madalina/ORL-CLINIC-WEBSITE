@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Header from "./COMPONENTS/HEADER/Header.jsx";
 import HomePage from "./COMPONENTS/HOME/HomePage.jsx";
 import DoctorDescription from "./COMPONENTS/DOCTOR/DoctorDescription.jsx";
-
+import Footer from "./COMPONENTS/FOOTER/Footer.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,6 +13,7 @@ const router = createBrowserRouter([
       <>
         <Header />
         <HomePage />
+        <Footer/>
       </>
     )
   },
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
       <>
         <Header />
         <DoctorDescription />
+        <Footer/>
       </>
     )
   },
