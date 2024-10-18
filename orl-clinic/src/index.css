@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.header__container {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;       
+    height: 160px;
+    min-height: auto;
+    position: fixed;
+}   
+
+.top__header {
+    background-color: green;
+    width: 100%;
+    height: 40%; 
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+.bottom__header {
+    background-color: blue;
+    width: 100%;
+    height: 70%;
+    position: relative; 
+
+}
+
+.doctor__specializations {
+    display: flex;
+    align-items: center;
+    background-color: rgba(200,16,16,255);
+    color:wheat;
+    padding: 20px ;
+    width: auto;
+    height: 100%;
+    text-align: center;
+}
+.doctor__name {
+    font-size: 20px;
+    letter-spacing: 0.02857em;
+    margin-left: 10px;
+    font-weight: 700;
+
+}
+.doctor__name__text {
+    text-decoration: none;
+    color:wheat;
+}
+
+.doctor__name__text:hover {
+    color:red;
+
+}
+
+.css-1588512-MuiButtonBase-root-MuiButton-root{
+    color:black !important;
+    color: wheat !important;
+    text-transform: none !important;
+    font-size: 20px !important;
+}
+
+.css-1588512-MuiButtonBase-root-MuiButton-root:hover {
+    color:red !important;
+}
+.change__language__and__telephone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.romania__flag {
+    width: 20px;
+    height: 50px;
+}
+
+.phone__number {
+    font-size: 20px;
+}
+
+/* BOTTOM HEADER */
+
+.bottom__header {
+    display: flex;
+    justify-content: space-between; /* Folosește space-between pentru a împărți spațiul */
+    align-items: center; /* Aliniază vertical elementele */
+    width: 100%;
+    background-color: #f0f0f0; /* Adaugă o culoare de fundal, dacă este necesar */
+    padding: 10px 20px; /* Adaugă padding pentru a crea spațiu */
+}
+
+.logo__section {
+    flex: 0 0 auto; /* Nu permite secțiunii să se extindă */
+    z-index: 2; /* Asigură-te că este deasupra altor elemente */
+}
+
+.logo__picture {
+    width: 200px; /* Dimensiunea logo-ului */
+    height: auto; /* Ajustează automat înălțimea */
+}
+.navbar__buttons {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social__media {
+    flex: 0 0 auto; 
+    margin-left: 20px; 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
