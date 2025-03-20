@@ -6,14 +6,13 @@
 }
 
 .header__container {
-    background-color: black;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     max-width: 100vw;
-    height: 130px; /* Înălțimea headerului */
+    height: 180px; /* Înălțimea headerului */
     position: fixed;
     top: 0;
     left: 0;

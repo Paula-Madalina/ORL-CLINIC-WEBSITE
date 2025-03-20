@@ -4,7 +4,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Flag_of_Romania from "../../assets/Flag_of_Romania.svg";
 import DoctorDescription from "../DOCTOR/DoctorDescription.jsx"
 import { Link } from 'react-router-dom';
-import LOGO from "../../assets/LOGO.png"
+import LOGO from "../../assets/dental_clinic.png"
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -36,127 +36,7 @@ function Header() {
   return (
     <div style={{paddingTop:"130px"}}>
       <div className="header__container">
-        <div className='top__header'>
-          <div className='doctor__specializations'>
-            <div className='doctor__name'>
-              <Link to="/aboutMe"  className='doctor__name__text' style={{textDecoration:"none"}}><p className='doctor__name__text__p' >Elena Martin</p></Link>
-            </div>
-            <div className='first__specialization__container'>
-            <Button
-                className='first__specialization__button'
-                aria-controls={anchorElChirurgie ? 'chirurgie-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={Boolean(anchorElChirurgie)}
-                onClick={handleClickChirurgie}
-                endIcon={<ArrowDropDownIcon />}
-              >
-                Chirurgie
-              </Button>
-              <Menu
-                 id="chirurgie-menu"
-                 anchorEl={anchorElChirurgie}
-                 open={Boolean(anchorElChirurgie)}
-                 onClose={handleCloseChirurgie}
-              >
-                <MenuItem onClick={() => handleMenuClick('Chirurgia_Sanului')}>Chirurgia Sanului</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Chirurgia_Faciala')}>Chirurgia Faciala</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Chirurgia_Siluetei')}>Chirurgia Siluetei</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Informatii_Generale')}>Informatii Generale</MenuItem>
-              </Menu>
-            </div>
-
-            <div className='second__specialization__container'>
-            <Button
-                className='second__specialization__button'
-                aria-controls={anchorElDermatologie ? 'dermatologie-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={Boolean(anchorElDermatologie)}
-                onClick={handleClickDermatologie}
-                endIcon={<ArrowDropDownIcon />}
-              >
-                Dermatologie
-              </Button>
-              <Menu
-                id="dermatologie-menu"
-                anchorEl={anchorElDermatologie}
-                open={Boolean(anchorElDermatologie)}
-                onClose={handleCloseDermatologie}
-              >
-                <MenuItem onClick={() => handleMenuClick('Dermatologie_Estetica')}>Dermatologie Estetica</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Dermatologie_Generala')}>Dermatologie Generala</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Lasere')}>Lasere</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Softwave_Tratament_Anti_Aging')}>Softwave-Tratament Anti-aging</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Morpheus8')}>Morpheus8</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Consult_3D')}>Consult 3D</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Informatii_Generale')}>Informatii Generale</MenuItem>
-              </Menu>
-            </div>
-
-            <div className='third__specialization__container'>
-            <Button
-                className='third__specialization__button'
-                aria-controls={anchorElMedSpa ? 'medspa-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={Boolean(anchorElMedSpa)}
-                onClick={handleClickMedSpa}
-                endIcon={<ArrowDropDownIcon />}
-              >
-                Med Spa
-              </Button>
-              <Menu
-                id="medspa-menu"
-                anchorEl={anchorElMedSpa}
-                open={Boolean(anchorElMedSpa)}
-                onClose={handleCloseMedSpa}
-              >
-                <MenuItem onClick={() => handleMenuClick('Exozomi')}>Exozomi</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Clear_Brilliant')}>Clear + Brilliant</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('NuEra Tight')}>NuEra Tight</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('PRX_T_lady')}>PRX-T lady</MenuItem>
-              </Menu>
-            </div>
-
-
-            <div className='fourth__specialization__container'>
-            <Button
-                className='fourth__specialization__button'
-                aria-controls={anchorElGalerie ? 'galerie-menu' : undefined}
-                aria-haspopup="true"
-                aria-expanded={Boolean(anchorElGalerie)}
-                onClick={handleClickGalerie}
-                endIcon={<ArrowDropDownIcon />}
-              >
-                Galerie
-              </Button>
-              <Menu
-                id="galerie-menu"
-                anchorEl={anchorElGalerie}
-                open={Boolean(anchorElGalerie)}
-                onClose={handleCloseGalerie}
-              >
-                <MenuItem onClick={() => handleMenuClick('Estetica_faciala')}>Estetica faciala</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Estetica_sanului')}>Estetica sanului</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Estetica_siluetei')}>Estetica siluetei</MenuItem>
-                <MenuItem onClick={() => handleMenuClick('Testimoniale')}>Testimoniale</MenuItem>
-              </Menu>
-            </div>
-
-            
-        </div>
-
-          <div className='change__language__and__telephone'>
-            <div className="change__language">
-              <div className='flag__container'>
-                <a href='http://google.com'><img src={Flag_of_Romania} alt="RomaniaFlag" className='romania__flag'/></a>
-              </div>
-            </div>
-            <div className='phone__container'>
-                <div className='phone__number'>
-                    <p>Telefon: 0760436103</p>
-                </div>
-            </div>
-          </div>
-        </div>
+        
         <div className='bottom__header'>
             {/* LOGO SECTION */}
             <div className='logo__section'>
@@ -166,13 +46,10 @@ function Header() {
             {/* NAVLINKS SECTION */}
             <div className='navbar__buttons'>
                 <p className='navlinks__routing'>Acasa</p>
-                <p className='navlinks__routing'>Testimoniale</p>
-                <p className='navlinks__routing'>#HappyPatients</p>
-                <p className='navlinks__routing'>Pentru Medici</p>
-                <p className='navlinks__routing'>Echipa</p>
+                <p className='navlinks__routing'>Estetica dentara si protetica</p>
+                <p className='navlinks__routing'>Dantura fixa si turism dentar</p>
                 <p className='navlinks__routing'>Preturi</p>
-                <p className='navlinks__routing'>Magazin Online</p>
-                <p className='navlinks__routing'>Blog</p>
+                <p className='navlinks__routing'>Despre Noi</p>
             </div>
 
             {/* SOCIAL MEDIA SECTION */}
