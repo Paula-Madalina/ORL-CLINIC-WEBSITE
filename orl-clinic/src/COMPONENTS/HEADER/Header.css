@@ -1,9 +1,8 @@
-
-  .bottom__header {
+.bottom__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    height: 90px;
   }
   
   .logo__section .logo__picture {
@@ -13,6 +12,8 @@
   .navbar__buttons {
     display: flex;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
   }
   
   .navlinks__routing {
@@ -31,19 +32,34 @@
     display: none;
   }
   
+  /* Overlay pentru fundal gri */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .overlay.show {
+    display: block;
+  }
+  
   @media (max-width: 955px) {
-    .header__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     .navbar__buttons {
       display: none;
       flex-direction: column;
       gap: 10px;
-    }
-    .social__media {
-        display: none;
+      background: white; /* Fundal alb pentru navbar când apare */
+      padding: 20px;
+      position: absolute;
+      top: 60px; /* Ajustează în funcție de înălțimea headerului */
+      left: 0;
+      width: 100%;
+      z-index: 2;
     }
   
     .navbar__buttons.open {
@@ -59,8 +75,10 @@
     }
   
     /* Ascunde social media când burger menu este activ */
-    .social__media.hide {
+    .social__media {
       display: none;
     }
+
+   
   }
   

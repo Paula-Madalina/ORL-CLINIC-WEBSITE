@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Header from "./COMPONENTS/HEADER/Header.jsx";

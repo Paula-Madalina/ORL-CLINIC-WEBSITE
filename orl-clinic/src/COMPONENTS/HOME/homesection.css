@@ -109,10 +109,15 @@ header h1 {
   text-align: center;
 }
 
-.image-left img, .image-right img {
-  max-width: 100%; /* Asigură că imaginile nu depășesc lățimea containerului */
-  height: auto; /* Păstrează proporțiile imaginilor */
+.image-right img {
+  width: 500px; 
+  height: 300px; 
   border-radius: 10px;
+}
+
+.image-left img {
+  width: 200px;
+  height: 200px;
 }
 
 .founder {
@@ -146,9 +151,6 @@ header h1 {
     min-height: auto;
   }
 
-  .mission {
-    flex-direction: column;
-  }
 
   .mission .text-left, .mission .text-right {
     padding: 10px;
@@ -188,6 +190,21 @@ header h1 {
 
   .founder p {
     font-size: 1rem;
+  }
+
+  .image-right img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 590px) {
+  .mission {
+    flex-direction: column-reverse;
+  }
+
+  .image-right img {
+    width: 100vw;
+    height: 200px;
   }
 }
 

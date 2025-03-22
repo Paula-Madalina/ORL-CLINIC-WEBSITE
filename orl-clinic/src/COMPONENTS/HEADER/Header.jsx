@@ -8,38 +8,16 @@ import LOGO from "../../assets/dental_clinic.png";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import MenuIcon from '@mui/icons-material/Menu';  // Icon pentru burger menu
-
+import MenuIcon from '@mui/icons-material/Menu';
+import "./Header.css"
 function Header() {
-  // Stare pentru burger menu și fiecare meniu
-  const [anchorElChirurgie, setAnchorElChirurgie] = useState(null);
-  const [anchorElDermatologie, setAnchorElDermatologie] = useState(null);
-  const [anchorElMedSpa, setAnchorElMedSpa] = useState(null);
-  const [anchorElGalerie, setAnchorElGalerie] = useState(null);
-  const [menuOpen, setMenuOpen] = useState(false);  // Stare pentru meniul burger
+  const [menuOpen, setMenuOpen] = useState(false);  
 
-  // Funcții pentru fiecare meniu
-  const handleClickChirurgie = (event) => setAnchorElChirurgie(event.currentTarget);
-  const handleCloseChirurgie = () => setAnchorElChirurgie(null);
-
-  const handleClickDermatologie = (event) => setAnchorElDermatologie(event.currentTarget);
-  const handleCloseDermatologie = () => setAnchorElDermatologie(null);
-
-  const handleClickMedSpa = (event) => setAnchorElMedSpa(event.currentTarget);
-  const handleCloseMedSpa = () => setAnchorElMedSpa(null);
-
-  const handleClickGalerie = (event) => setAnchorElGalerie(event.currentTarget);
-  const handleCloseGalerie = () => setAnchorElGalerie(null);
-
-  const handleMenuClick = (menuItem) => {
-    console.log(`Clicked on ${menuItem}`);
-  };
-
-  // Funcția pentru toggle burger menu
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <div>
+      <div className={`overlay ${menuOpen ? 'show' : ''}`} onClick={toggleMenu}></div>
       <div className="header__container">
         <div className='bottom__header'>
           {/* LOGO SECTION */}
