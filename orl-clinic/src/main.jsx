@@ -5,9 +5,11 @@ import Header from "./COMPONENTS/HEADER/Header.jsx";
 import HomePage from "./COMPONENTS/HOME/HomePage.jsx";
 import DoctorDescription from "./COMPONENTS/DOCTOR/DoctorDescription.jsx";
 import Footer from "./COMPONENTS/FOOTER/Footer.jsx";
-import PricesPage from "./COMPONENTS/PRICES/Prices.jsx"; // Importă noua componentă
+import PricesPage from "./COMPONENTS/PRICES/Prices.jsx"; 
 import Estetica from "./COMPONENTS/ESTETICA/Estetica.jsx";
-import DanturaFixa from "./COMPONENTS/DANTURAFIXA/DanturaFixa.jsx"
+import DanturaFixa from "./COMPONENTS/DANTURAFIXA/DanturaFixa.jsx";
+
+
 const router = createBrowserRouter([
   {
     path: "/",

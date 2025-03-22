@@ -6,7 +6,8 @@ import "./homesection.css";
 import Header from '../HEADER/Header';
 import Footer from '../FOOTER/Footer';
 import Appointment from "../APPOINTMENT/Appointment";
-import Carousel from "../CAROUSEL/Carousel"
+import Carousel from "../CAROUSEL/Carousel";
+// import Echipa from "../ECHIPA/Echipa"
 
 
 function Homepage() {
@@ -63,6 +64,7 @@ function Homepage() {
     </div>
     <Appointment/>
     <Carousel/>
+    {/* <Echipa/> */}
     <Footer/>
     </div>
   );

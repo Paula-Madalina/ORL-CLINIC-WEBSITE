@@ -88,35 +88,36 @@ const services = [
 
 export default function Carousel() {
     return (
-        <Swiper
-        modules={[Navigation, Autoplay]}
-        spaceBetween={20}
-        slidesPerView={3}
-        navigation
-        autoplay={{ delay: 3000 }}
-        loop
-        breakpoints={{
-          320: {
-            slidesPerView: 1,  // pe telefoane va fi 1 slide
-          },
-          768: {
-            slidesPerView: 2,  // pe tablete va fi 2 slide-uri
-          },
-          1024: {
-            slidesPerView: 3,  // pe ecrane mari va fi 3 slide-uri
-          },
-        }}
-      >
-        {services.map((service, index) => (
-          <SwiperSlide key={index}>
-            <div className="slide">
-              <img src={service.image} alt={service.title} />
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <Swiper
+  modules={[Navigation, Autoplay]}
+  spaceBetween={20}
+  slidesPerView={1}  // 1 slide pe rând
+  navigation
+  autoplay={{ delay: 3000 }}
+  loop
+  centeredSlides={true}  // Center the slides
+  breakpoints={{
+    320: {
+      slidesPerView: 1,  // 1 slide pe ecrane mici
+    },
+    768: {
+      slidesPerView: 2,  // 2 slide-uri pe tablete
+    },
+    1024: {
+      slidesPerView: 3,  // 3 slide-uri pe ecrane mari
+    },
+  }}
+>
+  {services.map((service, index) => (
+    <SwiperSlide key={index}>
+      <div className="slide">
+        <img src={service.image} alt={service.title} />
+        <h3>{service.title}</h3>
+        <p>{service.description}</p>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
       
     );
   }

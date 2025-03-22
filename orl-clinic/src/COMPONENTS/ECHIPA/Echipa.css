@@ -1,0 +1,48 @@
+.swiper-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 0 0 100%; /* Un singur card pe rând pe ecrane mici */
+    padding: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    max-width: 300px;  /* Poți ajusta lățimea imaginii */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Săgețile pentru navigare */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: red;  /* Poți schimba culoarea săgeților */
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+  }
+  
+  /* Responsivitate: Ascunde săgețile pe ecrane mari */
+  @media (min-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+  

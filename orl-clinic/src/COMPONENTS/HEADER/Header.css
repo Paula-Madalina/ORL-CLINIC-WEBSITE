@@ -14,7 +14,7 @@
 
   
   .logo__section .logo__picture {
-    max-width: 120px;
+    max-width: 150px;
   }
   
   .navbar__buttons {
@@ -52,7 +52,7 @@
 }
 
 .navlinks__routing:hover::after {
-    bottom: 0; /* Border-ul se ridică exact sub link */
+    bottom: -5px;
     transform: translateX(-50%) scaleY(1);
 }
 
@@ -83,6 +83,17 @@
   .overlay.show {
     display: block;
   }
+
+  .social__media__icons {
+    cursor: pointer;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out; /* Schimbă doar culoarea */
+  }
+  
+  .social__media__icons:hover {
+    color: red;  /* Culoarea se schimbă la hover */
+  }
+  
   
   @media (max-width: 955px) {
     .navbar__buttons {

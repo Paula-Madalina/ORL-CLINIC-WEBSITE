@@ -7,13 +7,20 @@ import { Link } from 'react-router-dom';
 import LOGO from "../../assets/dental_clinic.png";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import MenuIcon from '@mui/icons-material/Menu';
 import "./Header.css"
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);  
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const handleFacebook = () => {
+      window.location.href = 'https://www.facebook.com/edentifyclinic'; 
+  }
+
+  const handleInstagram = () => {
+    window.location.href = 'https://www.instagram.com/edentifydentalcenter/'; 
+}
 
   return (
     <div>
@@ -43,9 +50,8 @@ function Header() {
 
           {/* SOCIAL MEDIA SECTION */}
           <div className={`social__media ${menuOpen ? 'hide' : ''}`}>
-            <div className='social__media__icons'><InstagramIcon /></div>
-            <div className='social__media__icons'><FacebookIcon /></div>
-            <div className='social__media__icons'><TwitterIcon /></div>
+            <div className='social__media__icons' onClick={handleInstagram}><InstagramIcon /></div>
+            <div className='social__media__icons' onClick={handleFacebook}><FacebookIcon /></div>
           </div>
         </div>
       </div>

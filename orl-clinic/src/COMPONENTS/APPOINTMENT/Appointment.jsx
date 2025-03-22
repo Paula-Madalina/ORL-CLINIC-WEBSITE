@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Appointment.css';
 
 const Appointment = () => {
@@ -7,6 +8,8 @@ const Appointment = () => {
     telefon: '',
     email: '',
   });
+
+  const form = useRef();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,12 +21,25 @@ const Appointment = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Datele formularului:', formData);
-    setFormData({
-      numePrenume: '',
-      telefon: '',
-      email: '',
-    });
+
+    // Trimite formularul folosind emailjs
+    emailjs
+      .sendForm('service_1xeh4es', 'template_gp35e4c', form.current, {
+        publicKey: 'lwM081GjWvFthyn2T',  // Folosește public key-ul tău din EmailJS
+      })
+      .then(
+        (result) => {
+          console.log('SUCCESS!', result.text);
+          setFormData({
+            numePrenume: '',
+            telefon: '',
+            email: '',
+          });  // Resetează formularul după trimitere
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
@@ -32,7 +48,7 @@ const Appointment = () => {
         <h1>Programează o Consultație</h1>
       </div>
       <div className="form-container">
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
           <div className="input-row">
             <input
               type="text"
@@ -58,7 +74,7 @@ const Appointment = () => {
               onChange={handleChange}
               required
             />
-            <button type="submit" className='send_button'>Trimite</button>
+            <button type="submit" className="send_button">Trimite</button>
           </div>
         </form>
       </div>
