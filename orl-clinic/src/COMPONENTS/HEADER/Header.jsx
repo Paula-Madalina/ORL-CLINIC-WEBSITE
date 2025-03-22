@@ -34,7 +34,7 @@ function Header() {
 
           {/* NAVLINKS SECTION */}
           <div className={`navbar__buttons ${menuOpen ? 'open' : ''}`}>
-            <p className='navlinks__routing'>Acasa</p>
+            <Link to="/" className='navlinks__routing'>Acasa</Link>
             <Link to="/estetica" className='navlinks__routing'>Estetica</Link>
             <Link to="/dantura-fixa-si-turism-dentar" className='navlinks__routing'>Dantura fixa si turism dentar</Link>
             <Link to="/prices" className='navlinks__routing'>Preturi</Link>

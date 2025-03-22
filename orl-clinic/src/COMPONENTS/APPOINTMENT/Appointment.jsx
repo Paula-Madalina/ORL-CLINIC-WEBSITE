@@ -58,7 +58,7 @@ const Appointment = () => {
               onChange={handleChange}
               required
             />
-            <button type="submit">Trimite</button>
+            <button type="submit" className='send_button'>Trimite</button>
           </div>
         </form>
       </div>

@@ -7,86 +7,117 @@
 
 .footer__container {
     width: 100%;
-    background-color: rgba(38,38,38,255);
-
+    background-color: rgba(38, 38, 38, 255);
+    padding: 20px 0;
 }
 
 .footer__text {
-    justify-content: space-between;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 100px;
+    padding: 10px 50px;
+    text-align: center;
 }
 
 
+.contact__details {
+    text-align: left;
+}
+
+.social__media__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px; /* Aceeași dimensiune ca imaginea */
+    height: 250px;
+    overflow: hidden; /* Evită depășirea */
+}
+
+.logo__container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Asigură că întreaga imagine rămâne vizibilă */
+}
+
+
+/* Contact Info */
 .icon__and__contact {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    
-}
-.about__contact {
-    margin-bottom: 15px;
+    font-size: 20px;
+    color: white;
 }
 
 .contact {
     color: rgb(108, 108, 108);
     text-transform: uppercase;
-    font-size: 18px; 
+    font-size: 16px;
 }
 
 .contact__value {
     color: #d4d4d3;
 }
 
-.about__contact__address {
-    margin-top: 15px;
+.about__contact {
+    margin-bottom: 15px;
 }
 
-.contact__text {
-    margin-left: 7px;
-}
-
-.phone__value, .email__value {
-    text-decoration: none;
-    color:#d4d4d3;
-}
-.phone__value:hover, .email__value:hover {
-    color:rgb(238, 121, 121);
-}
-
+/* Social Media Buttons */
 .doctor__name {
-    color:wheat;
+    color: wheat;
     font-weight: 500;
-    margin-left: 0;
-    margin-top: -30px;
+    margin-top: 10px;
 }
 
 .social__media__arrangement {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
+    width: 160px;
+    gap: 20px;
 }
 
 .social__media__arrangement:hover {
     background-color: #286090;
-    color:wheat
+    color: wheat;
 }
 
 .facebook {
     background-color: #3175af;
+    margin-top: 20px;
     margin-bottom: 10px;
-    margin-top: 30px;
-    
 }
 
 .instagram {
     background-color: #3175af;
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer__text {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .contact__details{
+        text-align: left;
+    }
+
+    .social__media__buttons, .footer__logo {
+        text-align: center;
+    }
+
+    .social__media__arrangement {
+        width: 140px;
+    }
 }

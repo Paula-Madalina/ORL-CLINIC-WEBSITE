@@ -3,11 +3,16 @@ import ProfilePhoto from "../../assets/main_img.jpg";
 import AboutUsPhoto from "../../assets/dental_reception.jpg";
 import DrSurmei from "../../assets/surmeiDR.png";
 import "./homesection.css"; 
+import Header from '../HEADER/Header';
+import Footer from '../FOOTER/Footer';
+import Appointment from "../APPOINTMENT/Appointment";
+import Carousel from "../CAROUSEL/Carousel"
 
 
 function Homepage() {
   return (
     <div className="hero__section">
+      <Header/>
       <div className="hero__image">
         <img src={ProfilePhoto} alt="ProfilePhoto" className="background__image" />
 
@@ -56,6 +61,9 @@ function Homepage() {
         <p>Co-Founder</p>
       </section>
     </div>
+    <Appointment/>
+    <Carousel/>
+    <Footer/>
     </div>
   );
 }

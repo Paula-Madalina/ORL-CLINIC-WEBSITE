@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    background-color: #d4c8a3; /* Crem închis */
+    background-color: rgba(191,162,120,255); 
+    margin: 100px auto;
   }
   
   .header {
@@ -14,18 +15,19 @@
     font-size: 24px;
     color: #000000;
   }
+
+
   
   .form-container {
     padding: 20px;
     border-radius: 10px;
     width: 100%;
-    max-width: 800px;
   }
   
   .input-row {
     display: flex;
     gap: 20px;
-    flex-wrap: nowrap; /* Nu se înfășoară elementele pe linii noi */
+    flex-wrap: nowrap; 
   }
   
   input {
@@ -37,17 +39,17 @@
     box-sizing: border-box;
   }
   
-  button {
-    padding: 10px 20px;
+  .send_button {
+    padding: 10px 50px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: rgba(24,101,92,255);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
-  button:hover {
+  .send_button:hover {
     background-color: #0056b3;
   }
   
