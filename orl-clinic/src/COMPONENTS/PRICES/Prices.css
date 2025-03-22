@@ -1,58 +1,124 @@
-.preturi-container {
+/* Prices.css */
+
+/* Stiluri generale pentru pagina */
+.prices-page {
     font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .title {
+    position: absolute;
   }
   
-  h1 {
-    text-align: center;
+  /* Stiluri pentru imaginea hero */
+  .hero_img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+  }
+  
+  .hero_img img {
+    width: 80%;
+    margin: auto;
+    height: 400px; 
+    display: block; 
+    filter: brightness(50%); /* Întunecă imaginea (50% luminozitate) */
+
+  }
+
+  
+  
+  /* Stiluri pentru titlul paginii */
+  .prices-page h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
     color: #333;
   }
   
-  .butoane-categorii {
+  /* Stiluri pentru containerul butoanelor */
+  .categorii-butoane {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin: 20px 0;
   }
   
-  .butoane-categorii button {
+  /* Stiluri pentru butoane */
+  .categorii-butoane button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
+    color: #fff;
     background-color: #007bff;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
-  .butoane-categorii button:hover {
+  .categorii-butoane button:hover {
     background-color: #0056b3;
   }
   
-  .lista-servicii {
-    margin-top: 20px;
+  /* Stiluri pentru lista de servicii */
+  .servicii-list {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
   }
   
-  .lista-servicii h2 {
-    text-align: center;
-    color: #555;
+  .servicii-list h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
   }
   
-  table {
+  /* Stiluri pentru tabel */
+  .servicii-list table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-bottom: 20px;
   }
   
-  table th, table td {
-    padding: 10px;
-    border: 1px solid #ccc;
+  .servicii-list table thead {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .servicii-list table th,
+  .servicii-list table td {
+    padding: 12px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
   }
   
-  table th {
-    background-color: #f4f4f4;
+  .servicii-list table th {
     font-weight: bold;
+  }
+  
+  .servicii-list table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Stiluri pentru mobil */
+  @media (max-width: 768px) {
+    .categorii-butoane {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .categorii-butoane button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .servicii-list table th,
+    .servicii-list table td {
+      padding: 8px;
+    }
   }

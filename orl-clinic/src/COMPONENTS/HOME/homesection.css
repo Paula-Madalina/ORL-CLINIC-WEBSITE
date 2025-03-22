@@ -1,156 +1,239 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .hero__image {
-    position: relative;
-    width: 100vw;
-    height: 600px;
-    overflow: hidden;
-  }
-  
-  .background__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
-  h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-  }
-  
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Ascunde overflow-ul orizontal */
+}
 
-  
+.hero__image {
+  position: relative;
+  width: 100vw;
+  height: 600px;
+  overflow: hidden;
+}
 
+.background__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.overlay__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.text__block {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+button {
+  background-color: #c4a880;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: auto;
+}
+
+.about-us {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.mission {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.mission .text-left, .mission .text-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.mission .text-left h2 {
+  color: #34495e;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.mission p {
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.mission .image-left, .mission .image-right {
+  flex: 1;
+  text-align: center;
+}
+
+.image-left img, .image-right img {
+  max-width: 100%; /* Asigură că imaginile nu depășesc lățimea containerului */
+  height: auto; /* Păstrează proporțiile imaginilor */
+  border-radius: 10px;
+}
+
+.founder {
+  margin-top: 40px;
+  text-align: center;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+.founder h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.5em;
+}
+
+.founder p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+}
+
+/* Media Queries pentru Responsive Design */
+
+@media (max-width: 1200px) {
   .overlay__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-  }
-  
-  .text__block {
-    width: 45%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Alinează textul și butonul corect */
-    min-height: 200px; /* Asigură o înălțime egală */
-  }
-  
-  button {
-    background-color: #c4a880;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: auto; /* Împinge butonul în jos */
+    gap: 20px;
   }
 
-  
-
-
-
-
-
-
-
-
-
-  .about-us {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+  .text__block {
+    width: 100%;
+    min-height: auto;
   }
-  
-  header h1 {
-    text-align: center;
-    color: #2c3e50;
-    font-size: 2.5em;
-    margin-bottom: 40px;
-  }
-  
+
   .mission {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .mission .text-left, .mission .text-right {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .mission .text-left h2 {
-    color: #34495e;
-    font-size: 2em;
-    margin-bottom: 15px;
-  }
-  
-  .mission p {
-    line-height: 1.8;
-    text-align: justify;
-    font-size: 1.1em;
-    color: #555;
-  }
-  
-  .mission .image-left, .mission .image-right {
-    flex: 1;
-    text-align: center;
-    
-  }
-  .image-left img {
-  width: 350px;
-  height: 400px;
+    flex-direction: column;
   }
 
-  .image-right img {
-    width: 500px;
+  .mission .text-left, .mission .text-right {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 830px) {
+  .hero__image {
     height: 400px;
   }
 
-  
-  .mission img {
+  .overlay__content {
+    top: 40%;
+  }
+
+  .about-us {
     max-width: 100%;
-    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
   }
-  
-  .founder {
-    margin-top: 40px;
-    text-align: center;
-    font-style: italic;
-    color: #7f8c8d;
+
+  header h1 {
+    font-size: 2rem;
   }
-  
+
+  .mission .text-left h2 {
+    font-size: 1.5rem;
+  }
+
+  .mission p {
+    font-size: 1rem;
+  }
+
   .founder h3 {
-    margin: 0;
-    color: #2c3e50;
-    font-size: 1.5em;
+    font-size: 1.2rem;
   }
-  
+
   .founder p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
+    font-size: 1rem;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .hero__image {
+    height: 300px;
+  }
+
+  .overlay__content {
+    top: 30%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .about-us {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .mission .text-left h2 {
+    font-size: 1.2rem;
+  }
+
+  .mission p {
+    font-size: 0.9rem;
+  }
+
+  .founder h3 {
+    font-size: 1rem;
+  }
+
+  .founder p {
+    font-size: 0.9rem;
+  }
+}

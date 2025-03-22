@@ -1,0 +1,153 @@
+/* EsteticaProtetica.css */
+
+.estetica-protetica {
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .servicii-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .serviciu {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .serviciu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .serviciu h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+  
+  .serviciu p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .beneficii-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .beneficii-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .beneficii-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .beneficii-section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .beneficii-section ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+  }
+  
+  .doctor-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .doctor-info {
+    flex: 2;
+  }
+  
+  .doctor-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-info p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .doctor-image {
+    flex: 1;
+  }
+  
+  .doctor-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .proceduri-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  .proceduri-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .procedura {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .procedura h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .procedura p {
+    font-size: 1rem;
+    color: #666;
+  }
