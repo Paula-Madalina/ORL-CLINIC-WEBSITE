@@ -3,6 +3,7 @@ import ProfilePhoto from "../../assets/main_img.jpg";
 import AboutUsPhoto from "../../assets/dental_reception.jpg";
 import DrSurmei from "../../assets/surmeiDR.png";
 import "./homesection.css"; 
+import Preturi from '../PRICES/Prices';
 
 
 function Homepage() {
@@ -56,6 +57,7 @@ function Homepage() {
         <p>Co-Founder</p>
       </section>
     </div>
+    <Preturi/>
     </div>
   );
 }

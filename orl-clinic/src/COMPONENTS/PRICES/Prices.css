@@ -1,0 +1,58 @@
+.preturi-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .butoane-categorii {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .butoane-categorii button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .butoane-categorii button:hover {
+    background-color: #0056b3;
+  }
+  
+  .lista-servicii {
+    margin-top: 20px;
+  }
+  
+  .lista-servicii h2 {
+    text-align: center;
+    color: #555;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
