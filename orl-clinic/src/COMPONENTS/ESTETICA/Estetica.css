@@ -8,16 +8,26 @@
     padding: 20px;
   }
   
+
   .hero-section {
+    background-image: url('../../assets/consult.png'); /* Adaugă calea imaginii tale */
+    background-size: cover; /* Asigură-te că imaginea acoperă întreaga secțiune */
+    height: 400px; /* Poți ajusta înălțimea după necesități */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 50px 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
     margin-bottom: 40px;
+    margin-top: 100px;
+
+    color: white; /* Schimbă culoarea textului pentru vizibilitate */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adaugă o umbră textului pentru un contrast mai bun */
   }
   
   .hero-section h1 {
     font-size: 2.5rem;
+    text-align: center;
     margin-bottom: 20px;
   }
   
@@ -28,10 +38,14 @@
   
   .servicii-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-bottom: 40px;
+    grid-template-columns: repeat(3, 1fr); /* 3 coloane pe primul rând */
+    gap: 20px; /* Spațiu între coloană */
+    justify-items: center; /* Centrează toate serviciile */
   }
+  
+
+
+  
   
   .serviciu {
     background-color: #fff;
@@ -150,4 +164,16 @@
   .procedura p {
     font-size: 1rem;
     color: #666;
+  }
+
+  @media (max-width: 768px) {
+    .servicii-section {
+      grid-template-columns: repeat(2, 1fr); /* 2 coloane pe ecrane mai mici */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .servicii-section {
+      grid-template-columns: 1fr; /* 1 coloană pe ecrane foarte mici */
+    }
   }

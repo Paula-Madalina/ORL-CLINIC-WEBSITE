@@ -101,23 +101,59 @@
 .instagram {
     background-color: #3175af;
 }
-
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 880px) {
     .footer__text {
-        flex-direction: column;
-        padding: 10px 20px;
+        flex-direction: column; /* Aranjare pe verticală pentru ecrane mici */
+        padding: 10px 20px; /* Ajustează padding-ul */
+        text-align: center; /* Centrăm textul pentru a arăta mai bine */
     }
 
-    .contact__details{
-        text-align: left;
+    .contact__details {
+        margin-bottom: 20px; /* Adăugăm un spațiu între secțiuni */
     }
 
-    .social__media__buttons, .footer__logo {
-        text-align: center;
+    .social__media__buttons {
+        display: flex;
+        flex-direction: column; /* Aranjare verticală a butoanelor */
+        align-items: center;
+        margin-top: 20px; /* Adăugăm spațiu între secțiuni */
+    }
+
+    .footer__logo {
+        margin-top: 20px; /* Adăugăm un pic de spațiu față de restul footer-ului */
     }
 
     .social__media__arrangement {
-        width: 140px;
+        width: 140px; /* Facem butoanele mai mici pe mobil */
+        gap: 15px; /* Reducem distanța dintre iconițe */
+        margin: 10px 0; /* Adăugăm mai mult spațiu între butoane */
+    }
+
+    .social__media__arrangement div {
+        font-size: 24px; /* Mărim puțin icoanele pentru vizibilitate */
+    }
+
+    .logo__container {
+        width: 200px; /* Reducem dimensiunea logo-ului pe mobil */
+        height: 200px;
+    }
+
+    .footer__container {
+        padding: 15px 0; /* Reducem padding-ul pentru a economisi spațiu pe mobil */
+    }
+
+    .contact__text {
+        font-size: 18px; /* Ajustăm dimensiunea fontului pentru titluri */
+    }
+
+    .contact__value {
+        font-size: 14px; /* Reducem dimensiunea textului de contact pe mobil */
+    }
+
+    .doctor__name {
+        font-size: 18px; /* Ajustăm mărimea textului pentru numele doctorului */
+        margin-top: 10px;
     }
 }
+

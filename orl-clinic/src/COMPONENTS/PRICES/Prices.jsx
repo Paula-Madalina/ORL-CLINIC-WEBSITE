@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import './Prices.css'; // Asigură-te că ai un fișier CSS pentru stilizare
 import Header from '../HEADER/Header';
-import ImageDental from "../../assets/image copy.png"
+import ImageDental from "../../assets/image copy.png";
 
 const PricesPage = () => {
-  // Datele pentru servicii și prețuri, organizate pe categorii
   const servicii = {
     albireDentara: [
       { denumire: 'Albire dentara profesionala cu LASER', pret: '2.300 lei' },
@@ -63,41 +62,39 @@ const PricesPage = () => {
 
   return (
     <div className="prices-page">
-        <Header/>
+        <Header />
         <div className='hero_img'>
-            <img src={ImageDental} alt="" />
-            <h1 className='title'>Prețuri</h1>
-
+            <img src={ImageDental} alt="Dental Clinic" />
+            <div className="hero-overlay">
+                <h1 className='title'>Prețuri</h1>
+            </div>
         </div>
-      <div className="categorii-butoane">
-        <button onClick={() => setCategorieSelectata('albireDentara')}>Albire Dentară</button>
-        <button onClick={() => setCategorieSelectata('aparateDentare')}>Aparate Dentare</button>
-        <button onClick={() => setCategorieSelectata('consultatii')}>Consultatii</button>
-        <button onClick={() => setCategorieSelectata('coroane')}>Coroane</button>
-        <button onClick={() => setCategorieSelectata('dintiFicsi')}>Dinti Ficsi</button>
-        <button onClick={() => setCategorieSelectata('fateteDentare')}>Fatete Dentare</button>
-        <button onClick={() => setCategorieSelectata('implantologie')}>Implantologie</button>
-        <button onClick={() => setCategorieSelectata('alteServicii')}>Alte Servicii</button>
-      </div>
-      <div className="servicii-list">
-        <h2>{categorieSelectata.replace(/([A-Z])/g, ' $1').toUpperCase()}</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Denumire</th>
-              <th>Pret (Lei)</th>
-            </tr>
-          </thead>
-          <tbody>
-            {servicii[categorieSelectata].map((serviciu, index) => (
-              <tr key={index}>
-                <td>{serviciu.denumire}</td>
-                <td>{serviciu.pret}</td>
-              </tr>
+        <div className="categorii-butoane">
+            {Object.keys(servicii).map(categorie => (
+                <button key={categorie} onClick={() => setCategorieSelectata(categorie)}>
+                    {categorie.replace(/([A-Z])/g, ' $1').toUpperCase()}
+                </button>
             ))}
-          </tbody>
-        </table>
-      </div>
+        </div>
+        <div className="servicii-list">
+            <h2>{categorieSelectata.replace(/([A-Z])/g, ' $1').toUpperCase()}</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Denumire</th>
+                        <th>Pret (Lei)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {servicii[categorieSelectata].map((serviciu, index) => (
+                        <tr key={index}>
+                            <td>{serviciu.denumire}</td>
+                            <td>{serviciu.pret}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
     </div>
   );
 };

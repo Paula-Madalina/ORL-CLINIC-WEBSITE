@@ -1,7 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react"; 
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+import { Navigation, Autoplay } from "swiper/modules"; 
+
+
 import './Carousel.css'; 
 import Cavity from "../../assets/dental-cavity.png";
 import Brush from "../../assets/profesional-brush.png";

@@ -8,6 +8,8 @@ import Footer from "./COMPONENTS/FOOTER/Footer.jsx";
 import PricesPage from "./COMPONENTS/PRICES/Prices.jsx"; 
 import Estetica from "./COMPONENTS/ESTETICA/Estetica.jsx";
 import DanturaFixa from "./COMPONENTS/DANTURAFIXA/DanturaFixa.jsx";
+import AboutUs from "./COMPONENTS/ABOUT/AboutUs.jsx";
+
 
 
 const router = createBrowserRouter([
@@ -50,6 +52,14 @@ const router = createBrowserRouter([
     element: (
       <>
         <DanturaFixa />
+      </>
+    )
+  },
+  {
+    path:"/despre-noi",
+    element: (
+      <>
+        <AboutUs />
       </>
     )
   }

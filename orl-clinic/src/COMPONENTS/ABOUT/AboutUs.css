@@ -1,0 +1,208 @@
+/* Containerul principal pentru Despre Noi */
+.despre-noi {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Header fixat */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  /* Secțiuni de conținut */
+  .section-about {
+    margin: 140px 0;
+    text-align: center;
+  }
+  
+  .section-about h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  .section-about p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  /* Secțiune Chirurgie */
+  .chirurgie-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    margin: 50px 0;
+    text-align: left;
+    background-color: #fff;
+  }
+  
+  .chirurgie-content {
+    width: 50%;
+  }
+  
+  .chirurgie-content h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+  }
+  
+  .chirurgie-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .chirurgie-image {
+    width: 40%;
+  }
+  
+  .chirurgie-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .author, .clinic-name {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .author-name {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Poza finala */
+  .image-section {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .section-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .despre-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sec-tiutlu {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .intro-text {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .valoare-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .valoare {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .valoare h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .valoare p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+
+  .misiune h3, .contact h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 40px 0 0;
+  }
+  
+  .misiune p, .contact p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  
+  /* Responsivitate */
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2rem;
+    }
+  
+    .section-about h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section-about p {
+      font-size: 1rem;
+    }
+  
+    .chirurgie-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .chirurgie-content, .chirurgie-image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePhoto from "../../assets/main_img.jpg";
+import ProfilePhoto from "../../assets/profile2.jpg";
 import AboutUsPhoto from "../../assets/dental_reception.jpg";
 import DrSurmei from "../../assets/surmeiDR.png";
 import "./homesection.css"; 
@@ -7,7 +7,7 @@ import Header from '../HEADER/Header';
 import Footer from '../FOOTER/Footer';
 import Appointment from "../APPOINTMENT/Appointment";
 import Carousel from "../CAROUSEL/Carousel";
-// import Echipa from "../ECHIPA/Echipa"
+import Echipa from "../ECHIPA/Echipa";
 
 
 function Homepage() {
@@ -40,14 +40,14 @@ function Homepage() {
         <div className="text-left">
           <h2>Misiunea și povestea eDentify</h2>
           <p>
-            eDentify este o clinică dentară specializată în chirurgie dentară și estetică proteitică, dedicată redării zâmbetului perfect fiecărui pacient. Sub conducerea Dr. Elena Surmei, un medic stomatolog cu expertiză avansată în estetică dentară, clinica oferă soluții personalizate pentru cazuri complexe, inclusiv împlanturi dentare, reconstrucții estetice și proteică avansată.
+            eDentify este o clinică dentară specializată în chirurgie dentară și estetică protetică, dedicată redării zâmbetului perfect fiecărui pacient. Sub conducerea Dr. Elena Surmei, un medic stomatolog cu expertiză avansată în estetică dentară, clinica oferă soluții personalizate pentru cazuri complexe, inclusiv împlanturi dentare, reconstrucții estetice și proteică avansată.
           </p>
         </div>
         <div className="image-right">
           <img src={AboutUsPhoto} alt="Clinica eDentify" />
         </div>
       </section>
-      <section className="mission">
+      <section className="mission-doctor">
         <div className="image-left">
           <img src={DrSurmei} alt="Dr. Elena Surmei" className='dr_photo'/>
         </div>
@@ -64,7 +64,7 @@ function Homepage() {
     </div>
     <Appointment/>
     <Carousel/>
-    {/* <Echipa/> */}
+    <Echipa/> <br /><br /><br /> <br />
     <Footer/>
     </div>
   );

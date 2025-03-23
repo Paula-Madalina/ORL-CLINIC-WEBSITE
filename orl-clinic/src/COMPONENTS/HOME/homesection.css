@@ -86,12 +86,24 @@ header h1 {
   margin-bottom: 40px;
 }
 
-.mission .text-left, .mission .text-right {
+.mission-doctor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.mission .text-left, .mission-doctor .text-right {
   flex: 1;
   padding: 20px;
 }
 
 .mission .text-left h2 {
+  color: #34495e;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.mission-doctor .text-left h2 {
   color: #34495e;
   font-size: 2em;
   margin-bottom: 15px;
@@ -104,10 +116,19 @@ header h1 {
   color: #555;
 }
 
-.mission .image-left, .mission .image-right {
+.mission-doctor p {
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.mission .image-left, .mission-doctor .image-right {
   flex: 1;
   text-align: center;
 }
+
+
 
 .image-right img {
   width: 500px; 
@@ -157,14 +178,12 @@ header h1 {
   }
 }
 
-@media (max-width: 830px) {
-  .hero__image {
-    height: 400px;
-  }
 
-  .overlay__content {
-    top: 40%;
-  }
+
+
+@media (max-width: 830px) {
+
+
 
   .about-us {
     max-width: 100%;
@@ -198,8 +217,19 @@ header h1 {
 }
 
 @media (max-width: 590px) {
-  .mission {
+  .mission-doctor {
+    display: flex;
     flex-direction: column-reverse;
+    justify-self: center;
+    align-items: center;
+  }
+  .mission {
+    flex-direction: column;
+    
+  }
+
+  .image-left img {
+    text-align: center;
   }
 
   .image-right img {
@@ -211,10 +241,6 @@ header h1 {
 @media (max-width: 480px) {
   .hero__image {
     height: 300px;
-  }
-
-  .overlay__content {
-    top: 30%;
   }
 
   h2 {
