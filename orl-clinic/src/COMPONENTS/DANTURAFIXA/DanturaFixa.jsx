@@ -87,7 +87,7 @@ const DanturaFixa = () => {
         {/* Secțiunea despre Dr. Alexandru Polonic */}
         <section className="doctor-section">
           <div className="doctor-info">
-            <h2>Dr. Alexandru Polonic – Specialist Dento-Alveolar</h2>
+            <h2>Dr. Alexandru Polonic – <span className='specializare__doctor'>Specialist Dento-Alveolar</span></h2>
             <p>
               Dr. Alexandru Polonic este un specialist în chirurgie dento-alveolară, recunoscut pentru expertiza sa în domeniul implantologiei și chirurgiei orale. Cu o experiență vastă în tratamentele complexe de reconstrucție dentară, Dr. Polonic este dedicat îmbunătățirii sănătății orale și estetice a pacienților săi prin tehnici moderne și soluții personalizate.
             </p>

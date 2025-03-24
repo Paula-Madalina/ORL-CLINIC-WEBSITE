@@ -68,7 +68,7 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #007bff;
+    color: green;
   }
   
   .procedura-section {
@@ -142,7 +142,7 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #007bff;
+    color: green;
   }
   
   .siguranta-section {
@@ -174,7 +174,7 @@
     content: "✓";
     position: absolute;
     left: 0;
-    color: #007bff;
+    color: green;
   }
   
   .doctor-section {
@@ -229,7 +229,7 @@
   }
   
   .statistica {
-    background-color: #fff;
+    background-color: rgba(191,162,120,255);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -239,11 +239,12 @@
   .statistica h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color:#000 ;
   }
   
   .statistica p {
     font-size: 1rem;
-    color: #666;
+    color: #383737;
   }
   
   .riscuri-section {
@@ -289,11 +290,19 @@
     z-index: -1; /* Pune overlay-ul sub text */
   }
   
-
+  @media screen and (max-width: 800px) {
+    .statistici-grid {
+      grid-template-columns: initial; /* sau 'none' */
+    }
+  }
 
   @media screen and (max-width: 650px) {
     .doctor-section {
       flex-direction: column;
+    }
+    .doctor-image img {
+      height: 400px;
+      width: 400px;
     }
   }
   
@@ -317,5 +326,16 @@
     .hero_section p {
       font-size: 0.8rem;
       color: #000;
+    }
+  }
+
+
+  
+  @media screen and (max-width: 450px) {
+   
+    .doctor-image img {
+      height: 300px;
+      width: 300px;
+      margin: auto;
     }
   }

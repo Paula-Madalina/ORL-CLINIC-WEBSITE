@@ -159,11 +159,15 @@
   .procedura h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: red;
   }
   
   .procedura p {
     font-size: 1rem;
     color: #666;
+  }
+  .specializare__doctor {
+    color: red;
   }
 
   @media (max-width: 768px) {
