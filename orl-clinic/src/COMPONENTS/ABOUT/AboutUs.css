@@ -43,6 +43,7 @@
     line-height: 1.6;
     margin: 0 auto;
     max-width: 800px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   /* Secțiune Chirurgie */
@@ -168,6 +169,11 @@
   .css-1f9xtph-MuiTypography-root {
     font-family: Georgia, 'Times New Roman', Times, serif !important;
   }
+
+  .css-z2632u-MuiTypography-root {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
   
   .valoare p {
     font-size: 14px;

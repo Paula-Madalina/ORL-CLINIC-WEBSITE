@@ -6,9 +6,9 @@ import SurmeiDR from "../../assets/surmeiDR.png";
 import IonitaDR from "../../assets/DrIonita.png";
 
 const teamMembers = [
-  { name: "Dr. Elena Surmei ", role: "Medic Specialist Estetica si Protetica", image: SurmeiDR },
-  { name: "Dr. Sabina Cristina Ionita", role: "Medic Specialist Endodontie", image: IonitaDR },
-  { name: "Dr. Alexandru Polinic", role: "Chirurgie Dento Alveolara", image: DrAlex },
+  { name: "Dr. Elena Surmei ", role: "Medic Specialist Estetică și Protetică", image: SurmeiDR },
+  { name: "Dr. Sabina Cristina Ioniță", role: "Medic Specialist Endodonție", image: IonitaDR },
+  { name: "Dr. Alexandru Polinic", role: "Chirurgie Dento Alveolară", image: DrAlex },
 ];
 
 export default function TeamCarousel() {
@@ -47,7 +47,7 @@ export default function TeamCarousel() {
   return (
     <Box textAlign="center" sx={{ maxWidth: 600, mx: "auto", p: 2 }}>
       <Typography variant="h5" gutterBottom style={{ marginBottom: "50px" }}>
-        Echipa Noastra
+        Echipa Noastră
       </Typography>
       <TransitionGroup
         component={Box}

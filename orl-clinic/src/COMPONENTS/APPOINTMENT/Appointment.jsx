@@ -59,7 +59,7 @@ const Appointment = () => {
               required
             />
             <input
-              type="tel"
+              type="number"
               name="telefon"
               placeholder="Telefon*"
               value={formData.telefon}
