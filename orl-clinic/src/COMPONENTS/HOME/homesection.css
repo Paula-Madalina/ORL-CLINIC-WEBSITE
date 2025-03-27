@@ -12,14 +12,33 @@ body, html {
 .hero__image {
   position: relative;
   width: 100vw;
-  height: 680px;
-  overflow: hidden;
+  height: auto;
+  overflow: contain;
+  
+}
+
+.text__block__welcome {
+  margin-top: -140px;
+  color: rgb(0, 0, 0);
+}
+
+.dental_name {
+  color: red;
+  font-size: 70px;
+}
+
+.hero__welcome {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.p_welcome {
+  color: rgb(70, 70, 70);
 }
 
 .background__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 h2 {
@@ -35,26 +54,48 @@ p {
 .overlay__content {
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 90%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transform: translate(-50%, -50%);
+  left: 27%; /* Mută textul mai la stânga */
+  transform: translateY(-50%); /* Elimină deplasarea pe orizontală */
+  width: 45%; /* Ajustează lățimea */
+  text-align: left; /* Aliniază textul la stânga */
   color: white;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideUp 1.2s ease-out forwards;
+  opacity: 0; /* Începe invizibil */
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translate(-10%, 100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-10%, -50%);
+    opacity: 1;
+  }
+}
+
+.hero_links {
+  text-decoration: none;
+  color: white;
 }
 
 .text__block {
   width: 45%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  min-height: 200px;
+  flex-direction: column;
+  height: 220px;
+  color:#000 ;
+  background-color: rgba(255, 255, 255, 0.7); /* Alb cu 50% transparență */
+  padding: 20px; /* Spațiere pentru a nu lipi textul de margini */
+  align-items: flex-start; /* Aliniază elementele la stânga */
+  text-align: left;
 }
 
-button {
+.hero__buttons {
   background-color: #c4a880;
   color: white;
   padding: 10px 20px;
@@ -62,6 +103,11 @@ button {
   cursor: pointer;
   font-size: 1rem;
   margin-top: auto;
+}
+
+.hero__buttons:hover {
+  background-color: orangered;
+  
 }
 
 .about-us {
@@ -89,8 +135,8 @@ header h1 {
 .mission-doctor {
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
-}
+  margin:0 40px 40px 40px;
+} 
 
 .mission .text-left, .mission-doctor .text-right {
   flex: 1;
@@ -109,14 +155,9 @@ header h1 {
   margin-bottom: 15px;
 }
 
-.mission p {
-  line-height: 1.8;
-  text-align: justify;
-  font-size: 1.1em;
-  color: #555;
-}
 
-.mission-doctor p {
+
+.hero_text {
   line-height: 1.8;
   text-align: justify;
   font-size: 1.1em;
@@ -161,6 +202,8 @@ header h1 {
 
 /* Media Queries pentru Responsive Design */
 
+
+
 @media (max-width: 1200px) {
   .overlay__content {
     flex-direction: column;
@@ -178,6 +221,30 @@ header h1 {
   }
 }
 
+
+@media (max-width: 1170px) {
+  .overlay__content {
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+  }
+
+  .text__block__welcome {
+    margin-top: 0;
+  }
+
+  .hero__welcome {
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+  .dental_name {
+    font-size: 35px;
+  }
+
+  .mission .text-left, .mission .text-right {
+    padding: 10px;
+  }
+}
 
 
 
@@ -216,12 +283,19 @@ header h1 {
   }
 }
 
+@media (max-width: 700px) {
+  .overlay__content {
+    margin-top: 50px;
+  }
+}
+
 @media (max-width: 590px) {
   .mission-doctor {
     display: flex;
     flex-direction: column-reverse;
     justify-self: center;
     align-items: center;
+    margin:0 ;
   }
   .mission {
     flex-direction: column;
@@ -236,12 +310,24 @@ header h1 {
     width: 100vw;
     height: 200px;
   }
+
+  .dental_name {
+    font-size: 30px;
+  }
+
+  .hero__welcome {
+    font-size: 20px;
+  }
+  .p_welcome {
+    font-size: 14px;
+  }
 }
 
+
 @media (max-width: 480px) {
-  .hero__image {
-    height: 300px;
-  }
+ .text__block {
+  color: #000;
+ }
 
   h2 {
     font-size: 1.2rem;
@@ -251,7 +337,7 @@ header h1 {
     font-size: 0.9rem;
   }
 
-  button {
+  .hero__buttons {
     padding: 8px 16px;
     font-size: 0.9rem;
   }
@@ -279,4 +365,36 @@ header h1 {
   .founder p {
     font-size: 0.9rem;
   }
+  .p_welcome {
+    display: none;
+  }
+  .hero__welcome {
+    font-size: 16px;
+  }
 }
+
+@media (max-width: 360px) {
+  .hero__welcome {
+    font-size: 10px;
+  }
+
+  .dental_name {
+    font-size: 12px;
+  }
+
+
+} 
+
+@media (max-width: 220px) {
+  .hero__welcome {
+    display: none;
+  }
+
+  .dental_name {
+    display: none;
+  }
+
+
+} 
+
+

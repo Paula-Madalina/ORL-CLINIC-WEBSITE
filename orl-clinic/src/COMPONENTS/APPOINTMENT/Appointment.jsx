@@ -45,7 +45,7 @@ const Appointment = () => {
   return (
     <div className="appointment-container">
       <div className="header-appointment">
-        <h1>Programează o Consultație</h1>
+        <h1 className='h1_title'>Programează o Consultație</h1>
       </div>
       <div className="form-container">
         <form ref={form} onSubmit={handleSubmit}>

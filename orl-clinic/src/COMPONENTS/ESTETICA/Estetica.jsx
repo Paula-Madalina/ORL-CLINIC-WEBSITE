@@ -6,6 +6,7 @@ import Image2 from "../../assets/coroane.png"
 import Image3 from "../../assets/implant.png"
 import Image4 from "../../assets/albire.png"
 import Image5 from "../../assets/parodontologie.png"
+import ProfilePhoto from "../../assets/newHomeImg.jpg";
 
 
 import { Swiper, SwiperSlide } from "swiper/react"; 
@@ -35,14 +36,30 @@ const Estetica = () => {
     <div>
       <Header/>
         {/* Secțiunea de titlu și introducere */}
-        <section className="hero-section">
-          <h1>Estetica Dentară și Protetică</h1>
-        </section>
+
+        <div className="hero_image">
+  <img src={ProfilePhoto} alt="ProfilePhoto" className="background__image" />
+
+  <div className="overlay_content">
+    <div className="text_block">
+      <h1 style={{ fontSize: "40px" }}>Estetica Dentară și Protetică</h1>
+      <h2><i style={{color:"red"}}>Zâmbet de vis și armonie perfectă</i></h2>
+      <p>
+        Frumusețea naturală se construiește printr-un echilibru delicat între funcționalitate și estetică. Fiecare pacient este unic, iar tratamentul nostru personalizat se adaptează nevoilor tale pentru a reda încrederea în zâmbetul tău.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+              
+      
       <div className="estetica-protetica">
         
 
         <section>
-          <h3>Serviciile Noastre de Protetică și Estetică Dentară</h3>
+          <h3 className='title_estetics'>Serviciile Noastre de Protetică și Estetică Dentară</h3>
         </section>
   
         {/* Secțiunea cu servicii */}

@@ -4,7 +4,9 @@ import Image from "../../assets/image copy.png"
 import "./Prices.css";
 import Header from "../HEADER/Header";
 import Appointment from "../../COMPONENTS/APPOINTMENT/Appointment"
-import Footer from "../FOOTER/Footer"
+import Footer from "../FOOTER/Footer";
+import ProfilePhoto from "../../assets/newHomeImg.jpg";
+
 
 const DentalPricing = () => {
   const [selectedCategory, setSelectedCategory] = useState('dintiFicsi');
@@ -31,12 +33,7 @@ const DentalPricing = () => {
       { name: 'Proteză capse', price: '4.500 Lei' },
       { name: 'Inlay / Onlay', price: '1.200 Lei' }
     ],
-    implantologie: [
-      { name: 'Consultatie implantologie', price: 'GRATUIT' },
-      { name: 'Implant dentar premium', price: 'de la 2.000 Lei' },
-      { name: 'Lucrare definitiva pe implant titan compozit/arcada', price: '17.000 Lei' },
-      { name: 'Lucrare definitiva pe implanturi zirconiu/titan', price: '25.000 Lei' }
-    ],
+
     ortodontie: [
       { name: 'Aparat dentar invizibil advanced (nelimitat gutiere)', price: '20.000 Lei' },
       { name: 'Aparat dentar invizibil MINI (10-12 gutiere) ', price: '9.500 Lei' },
@@ -56,15 +53,16 @@ const DentalPricing = () => {
       { name: 'Tratament endodontic dinte pluriradicular', price: '1.200 Lei' },
       { name: 'Tratament endodontic molar de minte', price: '1.700 Lei' },
     ],
-    esteticaDentara: [
-      { name: 'Albire dentară profesională cu LASER', price: '2.300 Lei' },
-      { name: 'Fațete dentare Emax', price: '3.200 Lei' },
-      { name: 'Fațetă EMAX (Digital Smile Design) PREMIUM', price: '4.00 Lei' },
-     
-    ],
     alteServicii: [
       { name: 'Consult medic specialist', price: 'GRATUIT' },
       { name: 'BRIGHT & SHINE (Detartraj ultrasunete, periaj profesional, air flow)', price: '600 Lei' },
+      { name: 'Albire dentară profesională cu LASER', price: '2.300 Lei' },
+      { name: 'Fațete dentare Emax', price: '3.200 Lei' },
+      { name: 'Fațetă EMAX (Digital Smile Design) PREMIUM', price: '4.00 Lei' },
+      { name: 'Consultatie implantologie', price: 'GRATUIT' },
+      { name: 'Implant dentar premium', price: 'de la 2.000 Lei' },
+      { name: 'Lucrare definitiva pe implant titan compozit/arcada', price: '17.000 Lei' },
+      { name: 'Lucrare definitiva pe implanturi zirconiu/titan', price: '25.000 Lei' }
       
     ]
   }
@@ -76,14 +74,14 @@ const DentalPricing = () => {
       <div className="container">
         {/* Imaginea */}
         <img
-          src={Image}
+          src={ProfilePhoto}
           alt="Background"
           className="image-background"
         />
         
         {/* Textul care apare deasupra imaginii */}
         <div className="text-overlay">
-          <h3>Prețuri</h3>
+          <h3 className="prices_title">Prețuri</h3>
           <p>Echipa multidisciplinară a clinicii DentOP este organizată astfel încât să ofere servicii stomatologice care acoperă toate specialitățile de la implantologie până la endodonție la microscop și protetică</p>
         </div>
   
@@ -91,11 +89,8 @@ const DentalPricing = () => {
         <div className="buttons_container">
           <div className="buttons">
             <button className="price_button" onClick={() => handleCategoryClick('dintiFicsi')}>Dinti Ficși</button>
-            <button className="price_button" onClick={() => handleCategoryClick('implantologie')}>Implantologie</button>
             <button className="price_button" onClick={() => handleCategoryClick('ortodontie')}>Ortodontie</button>
             <button className="price_button" onClick={() => handleCategoryClick('endodontie')}>Endodontie </button>
-
-            <button className="price_button" onClick={() => handleCategoryClick('esteticaDentara')}>Estetică Dentară</button>
             <button className="price_button" onClick={() => handleCategoryClick('alteServicii')}>Alte Servicii</button>
             
           </div>

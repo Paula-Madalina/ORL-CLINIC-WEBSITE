@@ -41,10 +41,10 @@ function Header() {
 
           {/* NAVLINKS SECTION */}
           <div className={`navbar__buttons ${menuOpen ? 'open' : ''}`}>
-            <Link to="/" className='navlinks__routing'>Acasa</Link>
-            <Link to="/estetica" className='navlinks__routing'>Estetica</Link>
-            <Link to="/dantura-fixa-si-turism-dentar" className='navlinks__routing'>Dantura fixa si turism dentar</Link>
-            <Link to="/prices" className='navlinks__routing'>Preturi</Link>
+            <Link to="/" className='navlinks__routing'>Acasă</Link>
+            <Link to="/estetica" className='navlinks__routing'>Estetică</Link>
+            <Link to="/dantura-fixa-si-turism-dentar" className='navlinks__routing'>Dantura fixă și turism dentar</Link>
+            <Link to="/prices" className='navlinks__routing'>Prețuri</Link>
             <Link to="/despre-noi" className='navlinks__routing'>Despre Noi</Link>
 
           </div>

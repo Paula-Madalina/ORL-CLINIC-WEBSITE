@@ -26,28 +26,28 @@
   width: 80%;
 }
 
-h3 {
+.prices_title {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
 
 
-.price_button:active {
-  background-color: orangered; /* Culoarea de fundal când butonul este apăsat */
-  color: white; /* Culoarea textului când butonul este apăsat */
-}
+
 
 .price_button:focus {
   outline: none; /* Elimină conturul implicit al butonului când este selectat */
 } 
 
 .price_button {
+  cursor: pointer;
   width: 100%;
   padding: 20px;
   transition: background-color 0.3s ease;
-
+  background-color: rgba(191,162,120,255);
+  border: 0.5px solid rgba(255,255,255,0.8); /* Delimitare subțire */
 }
+  
 .price_button:hover {
   background-color: orangered;
 }
@@ -63,11 +63,22 @@ h3 {
 .service-item {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px; /* Mai mult padding pentru un aspect aerisit */
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  gap: 20px; /* Spațiu uniform între elemente */
 }
+
+.service-item span:first-child {
+  flex: 70%; /* Numele serviciului ocupă 70% */
+}
+
+.service-item span:last-child {
+  flex: 30%; /* Prețul ocupă 30% */
+  text-align: right;
+}
+
 
 .service-item span {
   font-size: 16px;
@@ -89,6 +100,8 @@ h3 {
   background-size: cover;
   height: 400px;
   filter: brightness(30%);
+  object-fit: cover;
+
 }
 
 .text-overlay {
@@ -101,7 +114,7 @@ h3 {
   width: 70%;
 }
 
-.text-overlay h3 {
+.text-overlay .prices_title {
   font-size: 32px;
   margin-bottom: 10px;
 }
@@ -120,7 +133,7 @@ h3 {
 
 @media (max-width: 600px) {
   
-  .text-overlay h3 {
+  .text-overlay .prices_title {
    display: none;
   }
   

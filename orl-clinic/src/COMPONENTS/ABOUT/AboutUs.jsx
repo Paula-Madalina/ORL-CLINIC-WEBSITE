@@ -27,32 +27,32 @@ const AboutUs = () => {
 
     <div class="valoare-container">
       <div class="valoare">
-        <h3>Excelență în Îngrijire</h3>
+        <h3 className='valori_fundamentale'>Excelență în Îngrijire</h3>
         <p>Ne străduim să oferim cea mai înaltă calitate a îngrijirii dentare...</p>
       </div>
 
       <div class="valoare">
-        <h3>Integritate și Transparență</h3>
+        <h3 className='valori_fundamentale'>Integritate și Transparență</h3>
         <p>Credem în construirea unor relații bazate pe încredere și onestitate...</p>
       </div>
 
       <div class="valoare">
-        <h3>Îngrijire Centrată pe Pacient</h3>
+        <h3 className='valori_fundamentale'>Îngrijire Centrată pe Pacient</h3>
         <p>Pacienții noștri sunt întotdeauna pe primul loc...</p>
       </div>
 
       <div class="valoare">
-        <h3>Inovație Continuă</h3>
+        <h3 className='valori_fundamentale'>Inovație Continuă</h3>
         <p>Suntem dedicați inovării și îmbunătățirii constante...</p>
       </div>
 
       <div class="valoare">
-        <h3>Respect și Empatie</h3>
+        <h3 className='valori_fundamentale'>Respect și Empatie</h3>
         <p>Respectul și empatia sunt pilonii interacțiunii noastre cu pacienții...</p>
       </div>
 
       <div class="valoare">
-        <h3>Responsabilitate Socială</h3>
+        <h3 className='valori_fundamentale'>Responsabilitate Socială</h3>
         <p>Ne asumăm responsabilitatea de a contribui la binele comunității...</p>
       </div>
     </div>

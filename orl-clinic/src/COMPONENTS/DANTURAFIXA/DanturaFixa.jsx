@@ -9,20 +9,34 @@ import DoctorImage from '../../assets/man-dr.png'; // Imaginea doctorului
 import Header from '../HEADER/Header';
 import Footer from '../FOOTER/Footer';
 import Appointment from '../APPOINTMENT/Appointment';
+import ProfilePhoto from "../../assets/newHomeImg.jpg";
 
 const DanturaFixa = () => {
   return (
 
     <div>
               <Header/>
-              <section className="hero_section">
-          <h1>Dinti Ficși</h1>
-          <h2>Zâmbet Nou în 24 de Ore!</h2>
-          <p>Pentru Cine este Recomandată Această Procedură?</p>
-          <p>
-            Nu există „candidatul perfect”, ci doar „planul de tratament perfect”! Fiecare pacient este unic, iar tratamentul se adaptează în funcție de nevoile specifice.
-          </p>
-        </section>
+
+
+              <div className="hero_container">
+                <img src={ProfilePhoto} alt="ProfilePhoto" className="background__image" />
+              
+                <div className="overlay_content">
+                  <div className="text___block">
+                    <h1 style={{ fontSize: "40px" }}>Dinti Ficș</h1>
+                    <h2><i style={{color:"red"}}>Zâmbet Nou în 24 de Ore!</i></h2>
+                    <p>Pentru Cine este Recomandată Această Procedură?</p>
+
+                    <p>
+                    Nu există „candidatul perfect”, ci doar „planul de tratament perfect”! Fiecare pacient este unic, iar tratamentul se adaptează în funcție de nevoile specifice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              
   
       <div className="dinti-ficsi">
         {/* Secțiunea de titlu și introducere */}

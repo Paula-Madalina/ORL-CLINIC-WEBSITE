@@ -22,6 +22,8 @@
     font-size: 2.5rem;
     color: #333;
   }
+
+
   
   /* Secțiuni de conținut */
   .section-about {
@@ -160,6 +162,11 @@
     font-size: 22px;
     color: #333;
     margin-bottom: 10px;
+    color: red;
+  }
+
+  .css-1f9xtph-MuiTypography-root {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
   }
   
   .valoare p {

@@ -6,15 +6,15 @@ import { Navigation, Autoplay } from "swiper/modules";
 
 
 import './Carousel.css'; 
-import Cavity from "../../assets/dental-cavity.png";
+import Cavity from "../../assets/carie-dentara.png";
 import Brush from "../../assets/profesional-brush.png";
-import Consult from "../../assets/consult.png";
+import Consult from "../../assets/consultdentar.jpg";
 import Canal from "../../assets/canal.png";
-import Coroane from "../../assets/coroane.png";
+import Coroane from "../../assets/coroane-dentare.png";
 import Proteze from "../../assets/proteze.png";
 import Fatete from "../../assets/fatete.png";
 import Chirurgie from "../../assets/chirurgie.png";
-import DintiFicsi from "../../assets/dintiFicsi.png";
+import DintiFicsi from "../../assets/dintifixi.png";
 import Implant from "../../assets/implant.png";
 import Ortodontie from "../../assets/ortodontie.png";
 import Albire from "../../assets/albire.png";
@@ -90,37 +90,33 @@ const services = [
 ];
 
 export default function Carousel() {
-    return (
+  return (
+    <div className="carousel-container">
+      <h3 className="carousel-title">Serviciile Noastre</h3>
       <Swiper
-  modules={[Navigation, Autoplay]}
-  spaceBetween={20}
-  slidesPerView={1}  // 1 slide pe rând
-  navigation
-  autoplay={{ delay: 3000 }}
-  loop
-  centeredSlides={true}  // Center the slides
-  breakpoints={{
-    320: {
-      slidesPerView: 1,  // 1 slide pe ecrane mici
-    },
-    768: {
-      slidesPerView: 2,  // 2 slide-uri pe tablete
-    },
-    1024: {
-      slidesPerView: 3,  // 3 slide-uri pe ecrane mari
-    },
-  }}
->
-  {services.map((service, index) => (
-    <SwiperSlide key={index}>
-      <div className="slide">
-        <img src={service.image} alt={service.title} />
-        <h3>{service.title}</h3>
-        <p>{service.description}</p>
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
-      
-    );
+        modules={[Navigation, Autoplay]}
+        spaceBetween={20}
+        slidesPerView={1}
+        navigation
+        autoplay={{ delay: 3000 }}
+        loop
+        centeredSlides={true}
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+      >
+        {services.map((service, index) => (
+          <SwiperSlide key={index}>
+            <div className="slide">
+              <img src={service.image} alt={service.title} />
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
   }
