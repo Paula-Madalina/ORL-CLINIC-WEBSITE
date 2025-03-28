@@ -82,7 +82,7 @@ const DentalPricing = () => {
         {/* Textul care apare deasupra imaginii */}
         <div className="text-overlay">
           <h3 className="prices_title">Prețuri</h3>
-          <p>Echipa multidisciplinară a clinicii DentOP este organizată astfel încât să ofere servicii stomatologice care acoperă toate specialitățile de la implantologie până la endodonție la microscop și protetică</p>
+          <p>Echipa multidisciplinară a clinicii E-Dentify este organizată astfel încât să ofere servicii stomatologice care acoperă toate specialitățile de la implantologie până la endodonție la microscop și protetică</p>
         </div>
   
         {/* Container pentru butoane */}

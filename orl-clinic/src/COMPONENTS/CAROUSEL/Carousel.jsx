@@ -27,12 +27,12 @@ const services = [
     image: Parodontologie
   },
   {
-    title: 'Albire dentara',
-    description:"Procedura de iluminare a nuanței dinților folosind agenți de albire speciali si neinvazivi. Beneficii: Oferă un zâmbet mai alb și mai strălucitor, îmbunătățind încrederea în sine.",
+    title: 'Albire dentară',
+    description:"Procedura de iluminare a nuanței dinților folosind agenți de albire speciali și neinvazivi. Beneficii: Oferă un zâmbet mai alb și mai strălucitor, îmbunătățind încrederea în sine.",
     image: Albire
   },
   {
-    title:"Ortodontie",
+    title:"Ortodonție",
     description:"Corectarea alinierii dinților și a mușcăturii folosind aparate dentare fixe sau mobile. Beneficii: Îmbunătățește estetica zâmbetului, sănătatea orală și funcționalitatea dentară, și previne problemele ortodontice viitoare.",
     image: Ortodontie
   },

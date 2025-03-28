@@ -23,7 +23,7 @@ const DanturaFixa = () => {
               
                 <div className="overlay_content">
                   <div className="text___block">
-                    <h1 style={{ fontSize: "40px" }}>Dinti Ficș</h1>
+                    <h1 style={{ fontSize: "40px" }}>Dinți Ficși</h1>
                     <h2><i style={{color:"red"}}>Zâmbet Nou în 24 de Ore!</i></h2>
                     <p>Pentru Cine este Recomandată Această Procedură?</p>
 
